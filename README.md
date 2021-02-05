@@ -1,61 +1,38 @@
-## 每道错题的对应的不熟悉的知识点
-### 物理
-+ 15题
-  + 楞次定律
-+ 19题
-  + 光电效应所在的一章
-+ 21题
-  + 数学几何基础与匀强电场的结合
-+ 22题实验题
-  + 不熟悉“验证力的平行四边形定则”实验题的套路
-+ 23题实验题
-  + 万用表的使用
-  + 万用表的原理
-### 化学
-+ 12题
-  + 根据题给信息推算元素
-+ 26题
-  + 化学答题时的关注点
-  + 结晶水的计算
-  + 化学实验题常见思路(套路)
-+ 27题
-  + 化学流程/工艺题常见套路
-+ 28题
-  + 选修四的化学大题常见套路
-+ 35题
-  + 电子排布式等的区别
-  + 电离能
-  + 熔沸点高低的原因(常见题型、回答模板)
-  + 离子晶体堆积方式的相关计算
-### 生物
-+ 30题
-  + 植物激素的相关知识(记忆)
-  + 细胞内水的作用(记忆)
-+ 31题
-  + 类似于(1)、(3)的答题方法、模板
+**注意:所有指令都是在聊天框中输入!**
+
+##### 如何开始比赛
+1. 第一个进去的人输入`.setup`进行初始化设置(特别是双方人数设定)
+2. 其余人进入游戏，并且所有人输入`.ready`进行准备
+3. 如果双方人数都达到最大值且都准备，则进行地图投票
+4. 投票完毕后进入新的地图，所有人再输入`.ready`进行准备
+5. 静候比赛开始吧！
+
+*如果双方人数不均衡，先让一个人退出，等到了第$5$步时候再进入服务器*
 
 
-### 说明
-在一些知识点的后面我括号里写着(记忆)，这说明这基本上就是记忆的事情了。
+##### 皮肤修改相关指令
+[插件地址 - weapon](https://github.com/kgns/weapons/tree/v1.7.1)
+[插件地址 - 手套](https://github.com/kgns/gloves)
+- `!ws`     修改武器皮肤
+- `!glove`  修改手套(可能需要重生后才生效)
 
-而在一些答题模板的知识点却没有说这是(记忆)，这是因为模板不是背会的，而是自己做题，通过对比答案，自己总结出自己答题的一套模板的。每个人可能都不同，但总能把答案要求的点给答出来。
-
-记住是自己做题，做的多了，知道该怎么答才能得分了，这时候心里就有一套模板了。最好能够把模板总结到纸上，并不是为了将来记忆，而是为了总结时候真正让模板成型。
-
-## 知识点学习
-上面我列举的知识点只是这张理综卷反应出来的一部分问题。看到你的物理大题都没做，就知道又是没时间。前面题目的做题速度还是要加快。如何加快？那就是题目熟练，自然就快了。
-
-上面列举的知识点分为某个具体的知识，某一章的知识，某一类小题型(比如结晶水的计算)，某一类题型的套路(比如化学流程/工艺题常见套路)。
-
-掌握这些知识的总体方法是：看这个知识的概念——通过例题理解这个知识——通过做题加深理解知识。
-有时候，知识是没有概念的(比如某个答题模板、套路)，有时候没有例题。这些都没关系，最终都是要通过做题来加强理解的。
-
-**做题时候一定要明白是为了什么而做题**不要瞎jb做，这样效率奇低。
-
-以上是对于掌握知识还有做题的一些小建议。对于这张试卷所反映出来的掌握不行的知识，我推荐从简单到难掌握。
-
-如果是单个知识，可以学习后就抓住这个知识的课后习题做。如果是模板题，可以做这个专题。如果没有专题的习题册，那就用高考卷吧。*2020年的高考卷***不要做**。*2020年的高考卷***不要做**。2015-2019这5年的卷子根据自己的需求做下来，比如要掌握工艺流程的题目套路答题模板，那就连续做好几份高考卷的工艺流程题。刚开始肯定不会，尝试着自己做，然后对照答案修订自己的答案，同时更新自己心里的答题套路。这样来个3年的卷子肯定能很好的掌握这个知识了(工艺流程题套路模板)。
-
-剩下的2年的卷子可以检验一下自己的所掌握。
-
-我大概估计一下，这上面的知识我提到的你都掌握了，你少说能提高50分。
+##### 比赛插件pubSetup相关指令
+[插件地址 - PubSetup](https://github.com/splewis/csgo-pug-setup)
+- `.setup`, begins the setup phase and sets the pug leader
+- `.10man`, an alias of setup with 5v5, captains, and a mapvote   快捷设置5v5对战
+- `.ready`
+- `.notready`
+- `.pause` requests a pause (which takes effect next freezetime)  暂停
+- `.unpause` request an unpause                                   取消暂停
+- `.start` starts the game if auto-live has been disabled
+- `.capt` gives the pug leader a menu to select captains          给队长菜单用来选择队员
+- `.rand` selects random captains                                 随机选择队员
+- `.leader` gives a menu to change the game leader                改变队长
+- `.endgame` force ends the game safely (only the leader can do this, note that this resets the leader to nobody) 投票结束比赛
+- `.forceend force ends the game without a confirmation menu 强制结束比赛
+  
+以下4个为拼刀胜利后的指令
+- `.stay` chooses to stay after winning a knife round         保持原队伍
+- `.swap` chooses to swap after winning a knife round         交换队伍
+- `.ct` chooses to start on ct after winning a knife round    到ct队伍
+- `.t` chooses to start on ct after winning a knife round     到t队伍
