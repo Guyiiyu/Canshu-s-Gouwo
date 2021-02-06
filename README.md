@@ -15,7 +15,8 @@
 ### 皮肤修改相关指令
 [插件地址 - weapon](https://github.com/kgns/weapons/tree/v1.7.1)
 [插件地址 - 手套](https://github.com/kgns/gloves)
-- `!ws`     修改武器皮肤
+- `!ws`     修改武器皮肤(刀的皮肤需要先修改刀)
+- `!knife`  修改刀
 - `!glove`  修改手套(可能需要重生后才生效)
 
 ### 比赛插件pubSetup相关指令
